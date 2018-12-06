@@ -16,7 +16,8 @@ cd /proj/marchlab/projects/EXPORTS/metagenomics/Tara-test/assembly_evaluation
 #$2 is output report file
 
 #-e for eukaryote
+#--mgm to use metagenemark for gene finding
 #use quast here because metaquast requires reference genomes
 #only compute basic metrics
 
-quast.py $1 -t 16 -e -o $2
+quast.py $1 -t 16 -e --gene-finding -o $2
